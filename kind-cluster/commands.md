@@ -197,7 +197,7 @@ sum(rate(container_network_transmit_bytes_total{namespace="default"}[5m])) by (p
 
 ---
 
-## 13 . Find GranaPassword 
+## 13 . Find Grafana Password 
 ``` bash
 kubectl -n monitoring get secret kind-prometheus-grafana -o jsonpath="{.data.admin-password}" | base64 -d ; echo
 
